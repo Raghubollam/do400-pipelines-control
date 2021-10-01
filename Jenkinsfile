@@ -1,10 +1,12 @@
-node('nodejs') {
+pipeline {
 
- stage('Checkout') {
+ agent {
 
- git branch: 'main',
+ node {
 
- url: 'https://github.com/Raghubollam/do400-pipelines-control'
+ label 'nodejs'
+
+ }
 
  }
 
