@@ -1,13 +1,3 @@
-node('nodejs') {
-
- stage('Checkout') {
-
- git branch: 'main',
-
- url: 'https://github.com/Raghubollam/do400-pipelines-control'
-
- }
-
 pipeline {
 
  agent {
